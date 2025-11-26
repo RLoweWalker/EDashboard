@@ -6,6 +6,7 @@
   <title>Ethics Dashboard</title>
 
   <style>
+    /* Reset + defaults */
     html, body {
       margin: 0;
       padding: 0;
@@ -13,34 +14,36 @@
       font-family: sans-serif;
     }
 
+    /* Background image (banner already baked in) */
     body {
       background-image: url('EthicsDashboardUpdating.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-
+      
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
+    /* Container that positions the video below the blue banner */
     .video-container {
-      /* EXACT placement under the blue banner */
-      margin-top: 420px; /* adjust +10/-10 if needed */
-      
+      margin-top: 420px; /* adjust slightly if needed */
       width: 70%;
       max-width: 700px;
+
       display: flex;
       justify-content: center;
     }
 
+    /* YouTube embed styling */
     .video-container iframe {
       width: 100%;
       height: 350px;
-      border-radius: 12px;
       border: none;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     }
   </style>
 </head>
